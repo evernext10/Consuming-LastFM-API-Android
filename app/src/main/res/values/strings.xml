@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LastFM</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_artists_title">Top Artists</string>
+    <string name="top_tracks_title">Top Tracks</string>
+    <string name="top_albums_title">Top Albums</string>
+    <string name="times">times</string>
+    <string name="plays">plays</string>
+    <string name="minutes">minutes.</string>
+    <string name="search_users_hint">Escribe tu nombre de usuario..</string>
+    <string name="empty_here">It\'s empty here, try another user name</string>
+    <string name="general_error">An error has happened, please try again</string>
+    <string name="please_enter_a_user_name">Please enter a user name</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_Artist">Top Artist</string>
+    <string name="title_Albums">Top Albums</string>
+    <string name="title_Tracks">Top Tracks</string>
+</resources>
