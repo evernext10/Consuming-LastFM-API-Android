@@ -57,7 +57,6 @@ public class TopAlbumsFragment extends BaseFragment implements TopAlbumsView {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         DaggerTopAlbumsComponent.builder().topAlbumsModule(new TopAlbumsModule(this)).build().inject(this);
-
     }
 
     @Override
@@ -116,6 +115,7 @@ public class TopAlbumsFragment extends BaseFragment implements TopAlbumsView {
             LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
             albumsRecyclerView.setLayoutManager(layoutManager);
             albumsRecyclerView.setAdapter(mAdapter);
+
             mAdapter.notifyDataSetChanged();
         } else {
             mAdapter.setDataset(topAlbums);
