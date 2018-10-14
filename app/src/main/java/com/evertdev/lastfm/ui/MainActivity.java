@@ -8,13 +8,11 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
 import android.text.TextUtils;
-import android.view.KeyEvent;
+import android.text.TextWatcher;
 import android.view.WindowManager;
-import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.evertdev.lastfm.R;
@@ -25,10 +23,10 @@ import com.evertdev.lastfm.models.Track;
 import com.evertdev.lastfm.ui.topalbumslisting.TopAlbumsFragment;
 import com.evertdev.lastfm.ui.topartistslisting.TopArtistsFragment;
 import com.evertdev.lastfm.ui.toptrackslisting.TopTracksFragment;
+import com.mancj.materialsearchbar.MaterialSearchBar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnEditorAction;
 
 public class MainActivity extends AppCompatActivity implements TopArtistsFragment.OnFragmentInteractionListener, TopAlbumsFragment.OnFragmentInteractionListener, TopTracksFragment.OnFragmentInteractionListener {
 
@@ -37,8 +35,10 @@ public class MainActivity extends AppCompatActivity implements TopArtistsFragmen
     @BindView(R.id.vp_main)
     ViewPager mViewPager;
     MainPagerAdapter mAdapter;
-    @BindView(R.id.edt_search)
-    EditText searchEditText;
+    /*@BindView(R.id.edt_search)
+    TextInputEditText searchEditText;*/
+    @BindView(R.id.searchBar)
+    MaterialSearchBar searchEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,31 @@ public class MainActivity extends AppCompatActivity implements TopArtistsFragmen
         ButterKnife.bind(this);
         looseSearchEditTextFocus();
         initializeFragments();
+
+        searchEditText.addTextChangeListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (isValidSearch(searchEditText.getText().toString())) {
+                    searchUser(searchEditText.getText().toString());
+                } else {
+                    showEnterValidUserNameToast();
+                }
+            }
+        });
+
+
+
+
     }
 
 
@@ -56,8 +81,8 @@ public class MainActivity extends AppCompatActivity implements TopArtistsFragmen
         mViewPager.setOffscreenPageLimit(3);
         mTabLayout.setupWithViewPager(mViewPager);
     }
-
-    @OnEditorAction(R.id.edt_search)
+/*
+    @OnEditorAction(R.id.searchBar)
     boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
         if (actionId == EditorInfo.IME_ACTION_SEARCH) {
             if (isValidSearch(v.getText().toString())) {
@@ -69,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements TopArtistsFragmen
             return true;
         }
         return false;
-    }
+    }*/
 
     private void showEnterValidUserNameToast() {
         Toast.makeText(this, R.string.please_enter_a_user_name, Toast.LENGTH_SHORT).show();

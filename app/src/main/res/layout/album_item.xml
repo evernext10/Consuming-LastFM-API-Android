@@ -12,10 +12,10 @@
         android:background="@drawable/ripple_background"
         android:orientation="vertical">
 
-        <ImageView
+        <com.andremion.music.MusicCoverView
             android:id="@+id/img_album"
-            android:layout_width="@dimen/album_image_width"
-            android:layout_height="@dimen/album_image_height" />
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
 
         <TextView
             android:id="@+id/txt_album_artist"

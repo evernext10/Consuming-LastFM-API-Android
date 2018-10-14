@@ -5,9 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.andremion.music.MusicCoverView;
 import com.evertdev.lastfm.R;
 import com.evertdev.lastfm.models.Album;
 import com.evertdev.lastfm.utils.ImageLoader;
@@ -74,7 +74,7 @@ public class TopAlbumsAdapter extends RecyclerView.Adapter<TopAlbumsAdapter.View
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.img_album)
-        ImageView albumImageView;
+        MusicCoverView albumImageView;
         @BindView(R.id.txt_album_artist)
         TextView artistTextView;
         @BindView(R.id.txt_album_name)

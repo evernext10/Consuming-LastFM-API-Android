@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,9 @@ import com.evertdev.lastfm.ui.BaseFragment;
 import com.evertdev.lastfm.ui.toptrackslisting.di.DaggerTopTracksComponent;
 import com.evertdev.lastfm.ui.toptrackslisting.di.TopTracksModule;
 import com.evertdev.lastfm.utils.Constants;
+import com.mcxtzhang.layoutmanager.swipecard.CardConfig;
+import com.mcxtzhang.layoutmanager.swipecard.OverLayCardLayoutManager;
+import com.mcxtzhang.layoutmanager.swipecard.RenRenCallback;
 
 import java.util.List;
 
@@ -107,7 +111,11 @@ public class TopTracksFragment extends BaseFragment implements TopTracksView {
         if (mAdapter == null) {
             mAdapter = new TopTracksAdapter(tracks, getContext(), onTrackClickedListener);
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
-            tracksRecyclerView.setLayoutManager(linearLayoutManager);
+            tracksRecyclerView.setLayoutManager(new OverLayCardLayoutManager());
+            CardConfig.initConfig(getContext());
+            ItemTouchHelper.Callback callback = new RenRenCallback(tracksRecyclerView,mAdapter,tracks);
+            ItemTouchHelper itemTouchHelper = new ItemTouchHelper(callback);
+            itemTouchHelper.attachToRecyclerView(tracksRecyclerView);
             tracksRecyclerView.setAdapter(mAdapter);
             mAdapter.notifyDataSetChanged();
         } else {

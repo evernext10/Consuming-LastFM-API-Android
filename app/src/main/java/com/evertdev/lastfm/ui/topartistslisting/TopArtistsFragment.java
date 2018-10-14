@@ -38,6 +38,7 @@ public class TopArtistsFragment extends BaseFragment implements TopArtistsView {
     TopArtistsPresenter mPresenter;
     TopArtistsAdapter mAdapter;
 
+
     public TopArtistsFragment() {
         // Required empty public constructor
     }

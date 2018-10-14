@@ -7,4 +7,8 @@
     <color name="colorSeparatorGrey">#A7A7A7</color>
     <color name="red">#d50000</color>
 
+    <color name="colorPane">#33C2CAC9</color>
+    <color name="colorIconLauncherBackground">#FFFFFF</color>
+
+
 </resources>

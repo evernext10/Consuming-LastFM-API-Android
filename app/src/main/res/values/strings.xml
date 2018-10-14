@@ -5,15 +5,26 @@
     <string name="top_artists_title">Top Artists</string>
     <string name="top_tracks_title">Top Tracks</string>
     <string name="top_albums_title">Top Albums</string>
-    <string name="times">times</string>
-    <string name="plays">plays</string>
-    <string name="minutes">minutes.</string>
-    <string name="search_users_hint">Escribe tu nombre de usuario..</string>
-    <string name="empty_here">It\'s empty here, try another user name</string>
-    <string name="general_error">An error has happened, please try again</string>
-    <string name="please_enter_a_user_name">Please enter a user name</string>
+    <string name="times">Tiempos</string>
+    <string name="plays">Reproduciones</string>
+    <string name="minutes">minutos.</string>
+    <string name="search_users_hint">Busca tu nombre de usuario..</string>
+    <string name="empty_here">Está vacío aquí, probar otro nombre de usuario</string>
+    <string name="general_error">Un error ha sucedido, por favor inténtelo de nuevo</string>
+    <string name="please_enter_a_user_name">Escriba un nombre de usuario</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_Artist">Top Artist</string>
     <string name="title_Albums">Top Albums</string>
     <string name="title_Tracks">Top Tracks</string>
+
+    <string name="transition_name_title" translatable="false">title</string>
+    <string name="transition_name_cover" translatable="false">cover</string>
+    <string name="transition_name_time" translatable="false">time</string>
+    <string name="transition_name_duration" translatable="false">duration</string>
+    <string name="transition_name_progress" translatable="false">progress</string>
+    <string name="transition_name_fab" translatable="false">fab</string>
+    <string name="play_vector_path" translatable="false">M6,5 l12,7 l0,0 l-12,0z M6,12 l12,0 l0,0 l-12,7z</string>
+    <string name="pause_vector_path" translatable="false">M5,6 l14,0 l0,4 l-14,0z M5,14 l14,0 l0,4 l-14,0z</string>
+
+
 </resources>
