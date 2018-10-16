@@ -29,9 +29,9 @@ public class MainActivityTest {
     static final String TOP_ARTISTS_JSON_FILE = "top_artists.json";
     static final String TOP_TRACKS_JSON_FILE = "top_tracks.json";
     static final String TOP_ALBUMS_JSON_FILE = "top_albums.json";
-    static final String TOP_ARTISTS_REQUEST_URL = "/test/?method=user.gettopartists&format=json&user=drrobbins&limit=5&api_key=35066a49f2deb23a3c35fd48ff5c9869";
-    static final String TOP_ALBUMS_REQUEST_URL = "/test/?method=user.gettopalbums&format=json&user=drrobbins&limit=5&api_key=35066a49f2deb23a3c35fd48ff5c9869";
-    static final String TOP_TRACKS_REQUEST_URL = "/test/?method=user.gettoptracks&format=json&user=drrobbins&limit=5&api_key=35066a49f2deb23a3c35fd48ff5c9869";
+    static final String TOP_ARTISTS_REQUEST_URL = "/test/?method=user.gettopartists&format=json&user=drrobbins&limit=10&api_key=35066a49f2deb23a3c35fd48ff5c9869";
+    static final String TOP_ALBUMS_REQUEST_URL = "/test/?method=user.gettopalbums&format=json&user=drrobbins&limit=10&api_key=35066a49f2deb23a3c35fd48ff5c9869";
+    static final String TOP_TRACKS_REQUEST_URL = "/test/?method=user.gettoptracks&format=json&user=drrobbins&limit=10&api_key=35066a49f2deb23a3c35fd48ff5c9869";
     static final String LAST_EXPECTED_ARTIST_NAME = "X-Dream";
     static final String LAST_EXPECTED_ARTIST_PLAY_COUNT = "30";
 
