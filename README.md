@@ -2,10 +2,21 @@
 
 Esta aplicacion realiza un proceso de consumo del servicio que presta Last.FM, en la cual se muestran (n) numero de canciones, albumes y artistas. En esta practica, procederemos a realizar la muestra de 50 de cada un de ellas. Con el fin de dar una muestra bastante amplia. 
 
+![alt text](https://media.giphy.com/media/1P0068VUp8jsmQVtrv/giphy.gif)
+
 # # Descripción técnica:
 * La aplicación está estructurada en MVP.
 
 ![alt text](https://cdn-images-1.medium.com/max/1600/1*p2JvbgEir0BusDiiVHMvIA.png)
+
+Modelo
+En una aplicación con una buena arquitectura estratificada, este modelo sólo sería la puerta de enlace a la capa de dominio o a la lógica empresarial. Consulte como proveedor de los datos que queremos mostrar en la vista. Las responsabilidades del modelo incluyen el uso de APIs, almacenamiento de datos en caché, administración de bases y así sucesivamente.
+
+Vista
+La vista, normalmente implementada por una actividad, contendrá una referencia al presentador. Lo único que la vista va a hacer es llamar a un método desde el presentador cada vez que hay una acción de interfaz.
+
+Presentador
+El presentador es responsable de actuar como el intermediario entre la visión y el modelo. Recupera los datos del modelo y lo devuelve formateado a la vista. Pero a diferencia del MVC típico, también decide qué sucede cuando interactúas con la vista.
 
 
 * La aplicación utiliza la última FM [APIs] (http://www.Last.FM/API/Intro) para obtener las listas de usuario superior.
