@@ -11,7 +11,7 @@ import org.junit.Assert;
 import static org.hamcrest.Matchers.is;
 
 /**
- * Created by Evert Dev on 1317/2018.
+ * Created by Evert Dev.
  * Asserts the number of items of a RecyclerView
  */
 

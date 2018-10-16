@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#CC0000</color>
-    <color name="colorPrimaryDark">#B90000</color>
+    <color name="colorPrimaryDark">#d50000</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="colorDarkGrey">#1E1E1E</color>
     <color name="colorSeparatorGrey">#A7A7A7</color>
     <color name="red">#d50000</color>
+    <color name="colorLine">#dfdfdf</color>
+
+
 
     <color name="colorPane">#33C2CAC9</color>
     <color name="colorIconLauncherBackground">#FFFFFF</color>

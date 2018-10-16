@@ -1,20 +1,15 @@
 package com.evertdev.lastfm;
 
-import android.support.test.espresso.NoMatchingViewException;
 import android.support.test.espresso.UiController;
 import android.support.test.espresso.ViewAction;
-import android.support.test.espresso.ViewAssertion;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
-import org.hamcrest.core.IsAnything;
-
-import static org.hamcrest.Matchers.anything;
 
 /**
- * Created by Evert Dev on 1318/2018.
+ * Created by Evert Dev
  */
 
 public class ViewPagerSwipeToPositionAction implements ViewAction {

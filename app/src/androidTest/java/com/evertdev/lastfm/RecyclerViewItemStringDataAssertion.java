@@ -11,10 +11,7 @@ import org.junit.Assert;
 
 import static org.hamcrest.Matchers.is;
 
-/**
- * Created by Evert Dev on 1317/2018.
- * Checks For a RecyclerView item if it displays right string data in the textviews
- */
+
 
 public class RecyclerViewItemStringDataAssertion implements ViewAssertion {
 

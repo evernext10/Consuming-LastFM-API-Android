@@ -7,9 +7,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
 import com.evertdev.lastfm.R;
-import com.evertdev.lastfm.ui.topalbumslisting.TopAlbumsFragment;
-import com.evertdev.lastfm.ui.topartistslisting.TopArtistsFragment;
-import com.evertdev.lastfm.ui.toptrackslisting.TopTracksFragment;
+import com.evertdev.lastfm.views.topalbumslisting.TopAlbumsFragment;
+import com.evertdev.lastfm.views.topartistslisting.TopArtistsFragment;
+import com.evertdev.lastfm.views.toptrackslisting.TopTracksFragment;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

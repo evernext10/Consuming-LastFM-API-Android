@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:focusableInTouchMode="true"
-    tools:context="com.evertdev.lastfm.ui.MainActivity">
+    tools:context="com.evertdev.lastfm.views.MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"

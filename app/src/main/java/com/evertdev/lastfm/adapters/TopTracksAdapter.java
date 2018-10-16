@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import com.evertdev.lastfm.R;
 import com.evertdev.lastfm.models.Track;
-import com.evertdev.lastfm.utils.DurationConverter;
-import com.evertdev.lastfm.utils.ImageLoader;
+import com.evertdev.lastfm.common.DurationConverter;
+import com.evertdev.lastfm.common.ImageLoader;
 
 import java.util.List;
 

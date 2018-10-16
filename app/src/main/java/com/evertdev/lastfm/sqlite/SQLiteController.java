@@ -11,8 +11,8 @@ public class SQLiteController {
     private SQLiteHelper sqLiteHelper;
     Context context;
 
-    public SQLiteController(Context mConext){
-        this.context = mConext;
+    public SQLiteController(Context mContext){
+        this.context = mContext;
         sqLiteHelper = new SQLiteHelper(context);
     }
 

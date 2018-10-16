@@ -1,12 +1,10 @@
 package com.evertdev.lastfm;
 
-import android.content.Context;
-import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.evertdev.lastfm.ui.MainActivity;
-import com.evertdev.lastfm.utils.Constants;
+import com.evertdev.lastfm.common.Common;
+import com.evertdev.lastfm.views.MainActivity;
 
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -23,13 +21,8 @@ import okhttp3.mockwebserver.RecordedRequest;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.contrib.RecyclerViewActions.scrollToPosition;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
-import static org.junit.Assert.*;
 
-/**
- * Instrumentation test, which will execute on an Android device.
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
+
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
     static final int TOTAL_ITEMS_COUNT = 10;
@@ -60,7 +53,7 @@ public class MainActivityTest {
     public static void setup() throws IOException {
         mockWebServer = new MockWebServer();
         mockWebServer.start();
-        Constants.BASE_URL = mockWebServer.url("test/").toString();
+        Common.BASE_URL = mockWebServer.url("test/").toString();
         mockWebServer.setDispatcher(new Dispatcher() {
             @Override
             public MockResponse dispatch(RecordedRequest recordedRequest) throws InterruptedException {

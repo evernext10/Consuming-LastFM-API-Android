@@ -1,7 +1,6 @@
 package com.evertdev.lastfm;
 
-import com.evertdev.lastfm.utils.Constants;
-import com.evertdev.lastfm.utils.DurationConverter;
+import com.evertdev.lastfm.common.DurationConverter;
 
 import org.junit.Test;
 
