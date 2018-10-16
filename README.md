@@ -11,7 +11,11 @@ Esta aplicacion realiza un proceso de consumo del servicio que presta Last.FM, e
 * La aplicación utiliza la última FM [APIs] (http://www.Last.FM/API/Intro) para obtener las listas de usuario superior.
 * Para poder usar sus APIs, primero necesitas [crear] (https://www.Last.FM/API/Account/Create) una clave API.
 * Usted puede utilizar métodos para conseguir los artistas superiores, la búsqueda para los Artis/las pistas etc..
-* Para no sólo mostrar los cinco primeros se puede ampliar el límite para cada solicitud tanto como desee, pero con Max 50 registros por llamada cambiando el valor de TOP_ITEMS_LIMIT a 50 en el archivo constants. java.
+
+* Se guarda la informacion que se recibe del servicio en una base de datos (SQLite), la cual utilizaremos como gestora de la informacion. 
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1200px-SQLite370.svg.png)
+
+
 * Se utiliza Dagger2 para inyectar dependencias en el módulo userslisting. 
 ![alt text](https://cdn-images-1.medium.com/max/1800/1*E1kr8neHIWIVivFffKS_2A.png)
 
