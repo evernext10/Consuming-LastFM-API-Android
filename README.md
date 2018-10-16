@@ -5,7 +5,7 @@ Esta aplicacion realiza un proceso de consumo del servicio que presta Last.FM, e
 # # Descripción técnica:
 * La aplicación está estructurada en MVP.
 
-![alt text](https://cdn-images-1.medium.com/max/800/1*HoHOQmr79f-SnoWGsuh1OQ.jpeg)
+![alt text](https://cdn-images-1.medium.com/max/1600/1*p2JvbgEir0BusDiiVHMvIA.png)
 
 
 * La aplicación utiliza la última FM [APIs] (http://www.Last.FM/API/Intro) para obtener las listas de usuario superior.
