@@ -4,6 +4,7 @@ Esta aplicacion realiza un proceso de consumo del servicio que presta Last.FM, e
 
 ![alt text](https://media.giphy.com/media/1P0068VUp8jsmQVtrv/giphy.gif)
 
+
 # # Descripción técnica:
 * La aplicación está estructurada en MVP.
 
