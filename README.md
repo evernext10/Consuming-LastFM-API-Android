@@ -13,7 +13,15 @@ Esta aplicacion realiza un proceso de consumo del servicio que presta Last.FM, e
 * Usted puede utilizar métodos para conseguir los artistas superiores, la búsqueda para los Artis/las pistas etc..
 * Para no sólo mostrar los cinco primeros se puede ampliar el límite para cada solicitud tanto como desee, pero con Max 50 registros por llamada cambiando el valor de TOP_ITEMS_LIMIT a 50 en el archivo constants. java.
 * Se utiliza Dagger2 para inyectar dependencias en el módulo userslisting. 
+![alt text](https://cdn-images-1.medium.com/max/1800/1*E1kr8neHIWIVivFffKS_2A.png)
+
 * Se añadio una prueba de unidad Android utilizando espresso para probar que los datos de la lista se muestran correctamente.
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/EspressoImg.png/220px-EspressoImg.png)
+
 * Se añadio una prueba unitaria para el convertidor de tiempo de duración.
+
 * Se utilizaron otras librerias de terceros como: RxJava/RxAndroid 2, Dagger2, Butterknife, Retrofit2, ZLayoutManager, MaterialSearchBar, AwesomeSplash entre otras, con el fin de ahorrar un poco de codigo..
+
+![alt text](https://cdn.dribbble.com/users/563824/screenshots/4329283/untitled-4.gif)
+
 
