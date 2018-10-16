@@ -2,11 +2,7 @@
 
 Esta aplicacion realiza un proceso de consumo del servicio que presta Last.FM, en la cual se muestran (n) numero de canciones, albumes y artistas. En esta practica, procederemos a realizar la muestra de 50 de cada un de ellas. Con el fin de dar una muestra bastante amplia. 
 
-![alt text](https://media.giphy.com/media/1P0068VUp8jsmQVtrv/giphy.gif)
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
-
-
-
+![alt text](https://photos.google.com/search/_tra_/photo/AF1QipNp6HWjfZlRmLRZvx5t83nnbIP4ilMdBiKkfzpP)
 
 # # Descripción técnica:
 * La aplicación está estructurada en MVP.
